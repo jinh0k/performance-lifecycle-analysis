@@ -218,19 +218,17 @@ KOPIS 예매 데이터를 중심으로 다음 외부 데이터를 결합했습�
 
 작품의 내용적 특성을 모델에 반영하기 위해 시놉시스를 KoNLPy로 토큰화하고, 장르별 LDA 토픽 모델링을 수행했습니다.
 
-[
-P(w \mid d)
-===========
-
-\sum_{k=1}^{K}
-P(w \mid z_k)P(z_k \mid d)
-]
+\sum_{k=1}^{K}P(w \mid z_k)P(z_k \mid d)$$
 
 여기서,
 
-* (d): 공연 시놉시스 문서
-* (w): 시놉시스에 등장하는 단어
-* (z_k): 잠재 토픽
+* $d$: 공연 시놉시스 문서
+
+* $w$: 시놉시스에 등장하는 단어
+
+* $z_k$: $k$번째 잠재 토픽
+
+* $K$: 전체 잠재 토픽 수
 
 을 의미합니다.
 
@@ -263,15 +261,7 @@ LDA 결과와 빈도 검토를 바탕으로 사랑, 전쟁, 가족, 마법, 음�
 세 가지 수명주기 유형을 예측하는 분류모델의 macro F1 score는 **0.81**로 나타났습니다.
 
 [
-F1_{macro}
-==========
-
-\frac{1}{C}
-\sum_{c=1}^{C}
-2
-\cdot
-\frac{Precision_c \cdot Recall_c}
-{Precision_c + Recall_c}
+\frac{1}{C}\sum_{c=1}^{C}2\cdot\frac{\mathrm{Precision}_c \cdot \mathrm{Recall}_c}{\mathrm{Precision}_c + \mathrm{Recall}_c}$$
 ]
 
 Macro F1은 각 유형의 F1 score에 동일한 가중치를 부여하므로, 유형별 표본 수가 불균형한 상황에서 전체적인 분류 성능을 평가하는 데 사용했습니다.
