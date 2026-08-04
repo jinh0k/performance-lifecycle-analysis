@@ -1,5 +1,6 @@
 # 공연 수명주기 예측
-<img width="2853" height="1529" alt="image" src="https://github.com/user-attachments/assets/a87d5378-520f-46f6-b853-f33ab549f759" />
+<img width="2854" height="1529" alt="image" src="https://github.com/user-attachments/assets/89f3f56f-e3f7-4f3a-bde8-a5fc13b48ce3" />
+
 
 ### Performance Lifecycle Prediction: A Design Science Approach
 
