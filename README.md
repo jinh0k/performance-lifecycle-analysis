@@ -97,20 +97,15 @@
 
 각 공연은 총 15개의 수명주기 변수로 표현됩니다.
 
-[
-Lifecycle_i =
-\left[
-\mu_{i1}, \beta_{i1}, \sigma_{i1},
-\ldots,
-\mu_{i5}, \beta_{i5}, \sigma_{i5}
-\right]
-]
+$$\mathrm{Lifecycle}i =\left[\mu{i1}, \beta_{i1}, \sigma_{i1},\ldots,\mu_{i5}, \beta_{i5}, \sigma_{i5}\right]$$
 
 여기서,
 
-* (\mu_{it}): 공연 (i)의 (t)번째 구간 평균 판매량
-* (\beta_{it}): 공연 (i)의 (t)번째 구간 판매량 기울기
-* (\sigma_{it}): 공연 (i)의 (t)번째 구간 판매량 표준편차
+* $\mu_{it}$: 공연 $i$의 $t$번째 구간 평균 판매량
+
+* $\beta_{it}$: 공연 $i$의 $t$번째 구간 판매량 기울기
+
+* $\sigma_{it}$: 공연 $i$의 $t$번째 구간 판매량 표준편차
 
 를 의미합니다.
 
