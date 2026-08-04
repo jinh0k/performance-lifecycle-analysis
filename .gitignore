@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 원본 데이터는 공개하지 않음 (KOPIS/KOSIS/크롤링 결합 데이터)
+data/*.csv
+
+# 대용량/비공개 산출물
+*.pptx
+*.hwp
+*.pdf
+reports/*.png
